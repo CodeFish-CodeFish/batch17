@@ -9,17 +9,17 @@ public class ModulusPractice2 {
         6 + 7 + 8 = 21
         Total of digits is: 21
          */
-        int number = 5558;
+        int number = 5558;  //
         int digit4 = number % 10;
         System.out.println( digit4 +" << digit4");
 
-        number = number /10;
+        number = number / 10; // 555
         System.out.println( number +" << number now");
 
         int digit3 = number % 10;
         System.out.println( digit3 +" << digit3");
 
-        number = number /10;
+        number = number / 10;
         System.out.println( number +" << number now");
 
         int digit2 = number % 10;
