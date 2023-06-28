@@ -20,7 +20,7 @@ public class HeadTailGame {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
 
-        String yesNo;
+       String yesNo;
         do {
             int number = random.nextInt(2);
             System.out.println("Game is started, MAKE a GUESS! HEAD/TAIL ");
@@ -35,7 +35,7 @@ public class HeadTailGame {
                 System.out.println("Sorry, that was not the correct choice!");
             }
             System.out.println("Do you want to play again? Y/N ");
-            yesNo = scanner.nextLine();
+              yesNo = scanner.nextLine();
         } while (yesNo.equalsIgnoreCase("yes"));
 
         System.out.println("Its Ok, SEE you NEXT time!");

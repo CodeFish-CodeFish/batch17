@@ -17,18 +17,22 @@ public class NestedForLoop2 {
         2:0
         ...
          */
+        LABEL1:
+        for (int hour = 0; hour < 13; hour++) {
+            if (hour >= 1) {
+                continue;
+            }
+            LABEL2:
+            for (int mins = 0; mins < 60; mins++) {
+                if (mins >= 20 && mins <= 50) {
+                    continue LABEL1;
+                }
+                for (int sec = 0; sec < 60; sec++)
 
-        for( int hour = 0; hour < 13; hour++){
-
-            for (int mins = 0; mins <60; mins++){
-
-                for (int sec = 0; sec <60; sec++)
-
-                System.out.println( hour +" : "+ mins +" : "+ sec);
+                    System.out.println(hour + " : " + mins + " : " + sec);
             }
 
         }
-
 
 
     }
